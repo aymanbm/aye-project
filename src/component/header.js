@@ -64,8 +64,8 @@ class AppHeader extends Component{
             <Navbar.Collapse id="basic-navbar-nav" className='col-'>
                 <Nav className="me-auto" >
     
-                <LinkContainer to="/" style={this.state} >
-                  <Nav.Link to="/" >Home</Nav.Link>
+                <LinkContainer to="/aye-project" style={this.state} >
+                  <Nav.Link to="/aye-project" >Home</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/services" style={this.state} >
                   <Nav.Link to="/services" >Services</Nav.Link>

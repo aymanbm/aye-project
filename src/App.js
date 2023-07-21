@@ -10,9 +10,7 @@ import AppHeader from './component/header';
 
 
 class App extends Component {
-  componentDidMount = () =>{
-    return(<Navigate to="/service" />) 
-  }
+  
   render(){
 
   
@@ -26,9 +24,9 @@ class App extends Component {
               {/* <Switch> */}
                 <div id='body'>
                 <Routes>
-                  {/* <Route path="/" element={<Navigate to="/" />} /> */}
+                  {/* <Route path="/aye-project" element={<Navigate to="/aye-project" />} /> */}
                   {/* <Redirect to="/" /> */}
-                  <Route exact path='/' element = {<Home />}/>
+                  <Route exact path='/aye-project' element = {<Home />}/>
                   {/* <Route exact path='/:test' element = {<Home />}/> */}
                 </Routes>
                 </div>
