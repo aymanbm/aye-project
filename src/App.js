@@ -1,15 +1,21 @@
 import './App.css';
 import './component/home.css';
 import './component/header.css';
-import React from 'react';
-import { BrowserRouter , Routes, Route, Navigate} from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter , Routes, Route, Navigate ,Switch , Redirect} from 'react-router-dom';
 import Home from "./component/home"
 import AppHeader from './component/header';
 
 
 
 
-function App () {
+class App extends Component {
+  componentDidMount = () =>{
+    return(<Navigate to="/service" />) 
+  }
+  render(){
+
+  
     return (
       <BrowserRouter>
           <div className="App">
@@ -17,19 +23,23 @@ function App () {
               <header id='header' >
               <AppHeader/>
               </header>
-              
-              <div id='body'>
+              {/* <Switch> */}
+                <div id='body'>
                 <Routes>
-                  <Route path="/" element={<Navigate to="/home" />} />
-                  <Route  path='/home' element = {<Home />}></Route>
+                  {/* <Route path="/" element={<Navigate to="/" />} /> */}
+                  {/* <Redirect to="/" /> */}
+                  <Route exact path='/' element = {<Home />}/>
+                  {/* <Route exact path='/:test' element = {<Home />}/> */}
                 </Routes>
-              </div>
+                </div>
+              {/* </Switch> */}
+              
               
             
           </div>
       </BrowserRouter>
     );
-  }
+  }}
 export default App;
 
 

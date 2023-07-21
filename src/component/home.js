@@ -8,6 +8,11 @@ import work5 from "./img/work-05.jpg";
 import work6 from "./img/work-06.jpg";
 import work7 from "./img/work-07.jpg";
 import work8 from "./img/work-08.jpg";
+import laptop from "./img/laptop.png";
+import team1 from "./img/team-1.png";
+import team2 from "./img/team-2.png";
+import team3 from "./img/team-3.png";
+import team4 from "./img/team-4.png";
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -191,6 +196,109 @@ const Home = () => {
 
                             </div>
                         </div>
+                </div>
+                <div id='Home-fifth' className='mt-5 mb-5'>
+                    <div className='container '>
+                                <div className='row'>
+
+                                    <div class=" mt-5 mb-5  ">
+
+                                            <div class="first col-" >
+
+                                                <Image src={image} className='mb-4'/>
+                                                <h3>Some Stuff About Us</h3>
+                                                <p class="text-black-50 ">THE GREAT TEAM</p>
+
+                                            </div>
+                                    </div>
+                                    <div class="description" >
+                                                <p class="text-black-50 text-center mb-5 m-auto " style={{maxWidth:"500px"}}>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div className='row align-items-center'>
+                                    <div className='col-lg-4 text-center text-md-start' style={{fontWeight:"600",textAlign:"left"}}>
+                                        <h4 style={{fontFamily:"system-ui"}}>Retina Design</h4>
+                                        <p className='text-black-50 fs-6'>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                                        <p className='text-black-50 fs-6'>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+                                        <Button variant="danger" id='button-more'style={{marginTop:"-4px"}}>ORDER ME ON</Button>
+
+                                    </div>
+                                    <div className='col-lg-8'>
+                                        <Image src={laptop} className='img-fluid'/>
+
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <div id='home-sixth ' className='pb-5 pt-5'>
+                    <div className='container ' style={{marginTop:"7rem"}}>
+
+                        <div class="row mt-5 mb-5">
+
+                            <div class=" col-" >
+
+                                <h2 style={{color:"#ffc400"}}>Meet The Team</h2>
+                                <p className='text-black-50'>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5">
+
+                            <div class=" col-lg-3 col-mb-1 text-center" >
+
+                                <div>
+                                    <div data-team="Luke Skywalker" className='image-team'>
+                                        <Image src={team1} className='img-fluid'/>
+                                        <h4 className='sky p-3'>Luke Skywalker</h4>
+                                        <blockquote className='p-3 text-black-50'><p >“I don't understand how we got by those troops. I thought we were dead.“
+</p></blockquote>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class=" col-lg-3 col-mb-1 text-center" >
+
+                                <div>
+                                    <div data-team="Luke Skywalker" className='image-team'>
+                                        <Image src={team2} className='img-fluid'/>
+                                        <h4 className='sky p-3'>Luke Skywalker</h4>
+                                        <blockquote className='p-3 text-black-50'><p >“I don't understand how we got by those troops. I thought we were dead.“
+</p></blockquote>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class=" col-lg-3 col-mb-1 text-center" >
+
+                                <div>
+                                    <div data-team="Luke Skywalker" className='image-team'>
+                                        <Image src={team3} className='img-fluid'/>
+                                        <h4 className='sky p-3'>Luke Skywalker</h4>
+                                        <blockquote className='p-3 text-black-50'><p >“I don't understand how we got by those troops. I thought we were dead.“
+</p></blockquote>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class=" col-lg-3 col-mb-1 text-center" >
+
+                                <div>
+                                    <div data-team="Luke Skywalker" className='image-team'>
+                                        <Image src={team4} className='img-fluid'/>
+                                        <h4 className='sky p-3'>Luke Skywalker</h4>
+                                        <blockquote className='p-3 text-black-50'><p >“I don't understand how we got by those troops. I thought we were dead.“
+</p></blockquote>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
         </div>

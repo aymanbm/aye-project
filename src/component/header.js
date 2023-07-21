@@ -56,16 +56,16 @@ class AppHeader extends Component{
     
         <Navbar bg="light" expand="lg" fixed={this.state.fixed} >
           <Container>
-            <LinkContainer to="/home" className='col-1'>
-              <Navbar.Brand href="/home"><Image src={image} fluid style={{}}/></Navbar.Brand> 
+            <LinkContainer to="/" className='col-1'>
+              <Navbar.Brand href="/"><Image src={image} fluid style={{}}/></Navbar.Brand> 
             </LinkContainer>
     
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className='col-'>
                 <Nav className="me-auto" >
     
-                <LinkContainer to="/home" style={this.state} >
-                  <Nav.Link to="/home" >Home</Nav.Link>
+                <LinkContainer to="/" style={this.state} >
+                  <Nav.Link to="/" >Home</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/services" style={this.state} >
                   <Nav.Link to="/services" >Services</Nav.Link>
