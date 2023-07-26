@@ -31,7 +31,7 @@
 }
 
 #Home-second{
-    height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
     background:#ffffff;
 }
 
@@ -93,11 +93,11 @@
 
 .home-third{
     margin-top: 10rem;
-    height: calc(120vh - 50px);
+    /* height: calc(120vh - 50px); */
 }
 
 .home-fourth{
-    height: calc(120vh - 50px);
+    /* height: calc(120vh - 50px); */
     background: #eff7fa;
 }
 .row-liste{
@@ -170,15 +170,65 @@
 }
 
 #Home-fifth{
-    height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
     background:#ffffff;
 }
-#ome-sixth{
-    height: calc(108vh - 50px);
-    background:#eff7fa;
+#home-sixth {
+    /* height: calc(108vh - 50px); */
+    background:azure !important;
 }
 .sky{
     background-color: rgb(51 209 204);
     color: #fff;
 }
 
+#button-more-2{
+    background-color:#ff3150;
+    color:#ffc400 !important;
+    font-size:15px;
+    border-radius:20px;
+    font-size:550;
+    font-weight: 550;
+    padding: 9px 15px;
+}
+
+#home-eight{
+    background: #19283f !important;
+}
+.row.nine{
+    text-align: left;
+}
+#home-ten{
+    background-color: #ffc400;
+}
+.subscribe input[type="email"],textarea{
+    border: none;
+    border-bottom: 2px solid white;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input::placeholder{
+    color: #eff7fa;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 550;
+}
+input:focus{
+    outline: none;
+}
+.subscribe button{
+    outline: none;
+    color: #ffc400;
+}
+
+#home-eleven{
+    background-color: #19283f;
+    color: #eff7fa;
+}
+ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+
+}

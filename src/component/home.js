@@ -1,5 +1,6 @@
 import React from 'react';
 import image from "./title.png";
+import logo from "./logo.png"
 import work1 from "./img/work-01.jpg";
 import work2 from "./img/work-02.jpg";
 import work3 from "./img/work-03.jpg";
@@ -13,6 +14,13 @@ import team1 from "./img/team-1.png";
 import team2 from "./img/team-2.png";
 import team3 from "./img/team-3.png";
 import team4 from "./img/team-4.png";
+import tech1 from "./img/tech-1.png";
+import tech2 from "./img/tech-2.png";
+import tech3 from "./img/tech-3.png";
+import tech4 from "./img/tech-4.png";
+import blog1 from "./img/blog-1.jpg";
+import blog2 from "./img/blog-2.jpg";
+import blog3 from "./img/blog-3.jpg";
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -38,9 +46,9 @@ const Home = () => {
                 
                 <div class="container">
 
-                    <div class=" mt-5 mb-5 position-relative">
+                    <div class=" mt-5 mb-5 ">
 
-                        <div class="first col-lg-" >
+                        <div class="first col-lg- position-relative" >
                             <Image src={image} className='mb-4'/>
                             <h3>We are Good at</h3>
                             <p class="text-black-50 ">SOME OF THESE STUFF UNDER</p>
@@ -112,7 +120,7 @@ const Home = () => {
                 </div>
 
                 <div className='home-fourth'>
-                        <div className='container mt-5 mb-5'>
+                        <div className='container mt-5 mb-5 p-5'>
                             <div className='row'>
 
                                 <div class=" mt-5 mb-5 position-relative">
@@ -203,7 +211,7 @@ const Home = () => {
 
                                     <div class=" mt-5 mb-5  ">
 
-                                            <div class="first col-" >
+                                            <div class="first col- position-relative" >
 
                                                 <Image src={image} className='mb-4'/>
                                                 <h3>Some Stuff About Us</h3>
@@ -231,7 +239,7 @@ const Home = () => {
                                 </div>
                     </div>
                 </div>
-                <div id='home-sixth ' className='pb-5 pt-5'>
+                <div id='home-sixth' className='pb-5 pt-5'>
                     <div className='container ' style={{marginTop:"7rem"}}>
 
                         <div class="row mt-5 mb-5">
@@ -300,7 +308,100 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            <div id='home-seventh text-center' className='pb-5 pt-5'>
+                <div className='container ' >
+                    <div className='row tech align-items-center'>
+                        <div className='col-lg-2 mt-3 mb-3'><Image src={tech1} className='img-fluid'/></div>
+                        <div className='col-lg-2 mt-3 mb-3'><Image src={tech2} className='img-fluid'/></div>
+                        <div className='col-lg-2 mt-3 mb-3'><Image src={tech3} className='img-fluid'/></div>
+                        <div className='col-lg-2 mt-3 mb-3'><Image src={tech4} className='img-fluid'/></div>
+                        <div className='col-lg-2 mt-3 mb-3'><Image src={tech1} className='img-fluid'/></div>
+                        <div className='col-lg-2 mt-3 mb-3'><Image src={tech2} className='img-fluid'/></div>
 
+                    </div>
+                </div>
+            </div>
+            <div id='home-eight' className='pb-5 pt-5 text-light text-center'>
+                <div className='container ' >
+                    <div className='row tech align-items-center'>
+                        <h2>Start Your Project Now</h2>
+                        <p className='text-white-50'>Leave your description and we start the engine.Don't worry,you can cancel anytime
+</p>
+                        <div class="d-flex justify-content-center mt-5 mb-5">
+                            <Button variant="danger" id='button-more-2'>START PROJECT</Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='home-nine' className='pb-5 pt-5 '>
+                <div className='container ' >
+                    <div className='row nine'>
+                            <div class=" mt-5 mb-5  ">
+
+                                <div class="first col- text-center position-relative" >
+
+                                    <Image src={image} />
+                                    <h3>Read Our Blog</h3>
+                                    <p class="text-black-50 ">NEW STORIES</p>
+
+                                </div>
+                            </div>
+                            <div class="row  mb-5  ">
+                                
+                                    <div className='col-lg-4'>
+                                        <div className='card'>
+                                            <Image src={blog1} className='card-img-top'/>
+                                            <div className='card-body'>
+                                                <span className='text-black-50'>Jan 17, 2022</span>
+                                                <h5 className='card-title'>Some Awesome Blog Title Here</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='col-lg-4'>
+                                        <div className='card'>
+                                            <Image src={blog2} className='card-img-top'/>
+                                            <div className='card-body'>
+                                                <span className='text-black-50'>Jan 17, 2022</span>
+                                                <h5 className='card-title'>Some Awesome Blog Title Here</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='col-lg-4'>
+                                        <div className='card'>
+                                            <Image src={blog3} className='card-img-top'/>
+                                            <div className='card-body'>
+                                                <span className='text-black-50'>Jan 17, 2022</span>
+                                                <h5 className='card-title'>Some Awesome Blog Title Here</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                    </div>
+                    <div class="d-flex justify-content-center  mb-5">
+                            <Button variant="danger" id='button-more-2'>MORE STORIES</Button>
+                    </div>
+
+            </div>
+                </div>
+                    </div>
+            <div id='home-ten' className="subscribe pt-5 pb-5 text-center text-md-start">
+                <div className='container'>
+                    <form className='row subscribe align-items-center '>
+                        <div className='col-lg-3'>
+                            <h5 class="fw-bold fs-5 mb-3" style={{fontWeight:"900",textAlign:"left"}}>Subscribe to our Newsletter:</h5>
+                        </div>
+                        <div className='col-lg-8'>
+                            <input type='email' class="w-100 text-light p-2 bg-transparent" placeholder='Enter Email Address' />
+                        </div>
+                        <div className='col-lg-1'>
+                            <Button variant="dark" id='button-more-2' style={{backgroundColor:"#19283f"}}>Subscribe</Button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            
         </div>
     )
 }

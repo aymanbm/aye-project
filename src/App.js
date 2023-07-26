@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import { BrowserRouter , Routes, Route, Navigate ,Switch , Redirect} from 'react-router-dom';
 import Home from "./component/home"
 import AppHeader from './component/header';
+import Footer from './component/footer';
 
 
 
@@ -31,7 +32,9 @@ class App extends Component {
                 </Routes>
                 </div>
               {/* </Switch> */}
-              
+              <footer id='footer' >
+              <Footer/>
+              </footer>
               
             
           </div>
